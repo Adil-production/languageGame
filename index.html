@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+#first , #second , #third, #fourth, #fivth, #sixth{
+    border: solid 0.2px rgb(59, 59, 59);
+    padding: 15px;
+    border-radius: 50px;
+    width: 100px;
+    background: orange;
+    font-family: Janna LT;
+    color: white;
+    margin: 20px;
+ 
+  
+    -webkit-box-shadow: inset 0 0 30px rgb(255, 60, 0);
+    -moz-box-shadow: inset 0 0 30px rgb(255, 17, 0);
+    box-shadow: inset 0 0 30px rgb(255, 30, 0);
+    background: hsl(0, 0%, 20%);
+  
+  /* #3 */
+ 
+  
+  /* #4 AND INFINITY!!! (CSS3 only) */
+  box-shadow:
+      0 0 0 10px hsl(0, 0%, 80%),
+      0 0 0 15px hsl(0, 0%, 90%);
+  
+      
+  /* If you could do pseudo elements 
+     you could get a few more... */
+  
+  /* Also, HSL is awesome but don't use it if
+     you need super old browser support */
+}
+
+.point{
+    color: black;
+    font-family: Janna LT;
+}
+#code{
+    margin : -9%;
+    height: 80px;
+    width: 102%;;
+
+}
+#slip{
+    font-family: Janna LT;
+}
+#get-code{
+    border: solid 0.2px rgb(59, 59, 59);
+    
+    padding: 15px;
+    border-radius: 50px;
+    width: 100px;
+    background: orange;
+    font-family: Janna LT;
+    color: white;
+    margin: 20px;
+ 
+  
+    -webkit-box-shadow: inset 0 0 30px rgb(255, 60, 0);
+    -moz-box-shadow: inset 0 0 30px rgb(255, 17, 0);
+    box-shadow: inset 0 0 30px rgb(255, 30, 0);
+    background: hsl(0, 0%, 20%);
+  
+  /* #3 */
+ 
+  
+  /* #4 AND INFINITY!!! (CSS3 only) */
+  box-shadow:
+      0 0 0 10px hsl(0, 0%, 80%),
+      0 0 0 15px hsl(0, 0%, 90%);
+  
+      
+  /* If you could do pseudo elements 
+     you could get a few more... */
+  
+  /* Also, HSL is awesome but don't use it if
+     you need super old browser support */
+}
+#restart{
+    border: solid 0.2px rgb(59, 59, 59);
+    padding: 15px;
+    border-radius: 50px;
+    width: 100px;
+    background: orange;
+    font-family: Janna LT;
+    color: white;
+    margin: 20px;
+ 
+  
+    -webkit-box-shadow: inset 0 0 30px rgb(255, 60, 0);
+    -moz-box-shadow: inset 0 0 30px rgb(255, 17, 0);
+    box-shadow: inset 0 0 30px rgb(255, 30, 0);
+    background: hsl(0, 0%, 20%);
+  
+  /* #3 */
+ 
+  
+  /* #4 AND INFINITY!!! (CSS3 only) */
+
+      
+      
+  
+      
+  /* If you could do pseudo elements 
+     you could get a few more... */
+  
+  /* Also, HSL is awesome but don't use it if
+     you need super old browser support */
+    display: none;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="orange">
+    <div align="center">
+    <h2 class="point" id="number-of-coins">0 <span class="point">coins</span></h2>
+    <br />
+    <br />
+    <br />
+    
+    <button id="get-code" onclick="code()">get text</button>
+        
+        <br />
+        <br />
+        <br />
+        <br />
+        
+    <input id="code" disabled />
+        
+    
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    
+    
+    <div align="center">
+    <button id="first" onclick="first()">Morocco</button>
+    <button id="second" onclick="second()">japan</button>
+    <button id="third" onclick="third()">america</button>
+    <button id="fourth" onclick="fourth()">germany</button>
+    <button id="fivth" onclick="fivth()">chinese</button>
+    <button id="sixth" onclick="sixth()">russian</button>
+    </div>
+    <div align="right">
+    <button id="restart" onclick="restart()">restart</button>
+</div>
+</div>
+
+<script>
+function random_item(mycodes)
+{
+
+
+return mycodes[Math.floor(Math.random()*mycodes.length)];
+}
+
+
+function code(){
+    var mycodes = ["ⵉⵎⵎⵉⵎ ⵍⴱⴰⵏⴰⵏ/ⵢⴰⵜⴼⵓⵜ ⵍⴱⴰⵏⴰⵏ" ,"ⵉⵙ ⵜⴼⴼⵓⴷⴻⴷ","ⵉⵏⵠⴰ ⵢⵉ ⵍⴰç","ⵉⵙ ⵠⵓⵔⴽ ⵜⴰⵙⴱⵔⵉⵜ ⵏ ⵡⴰⵎⴰⵏ","ⵡⵊⴷ ⵍⴼⴷⵓⵔ", "我々の日常生活の日本語の単語" , "あなたに平和を","お元気ですか","また来日","プログラミング" ,  "Hello , I'm speaking English" ,"how are you","are you fine","see you next time","it's programming", "die Gefühle" ,"Frieden sei mit dir","Hallo","Wir sehen uns an einem anderen Tag","wie geht es dir", "狗 微笑","使您平静","你还好吗","程式设计" ,"再见", "Собака Улыбаться" , "Увидимся в другой день" , "мир Вам","как дела", "у тебя есть собака"];
+        document.getElementById("code").value = random_item(mycodes);
+        document.getElementById("first").style.background = "hsl(0, 0%, 20%)";
+        document.getElementById("second").style.background = "hsl(0, 0%, 20%)";
+        document.getElementById("third").style.background = "hsl(0, 0%, 20%)";
+        document.getElementById("fourth").style.background = "hsl(0, 0%, 20%)";
+        document.getElementById("fivth").style.background = "hsl(0, 0%, 20%)";
+        document.getElementById("sixth").style.background = "hsl(0, 0%, 20%)";
+        document.getElementById("restart").style.display = "none";
+        
+    }
+
+    
+
+    function first(){
+        if(document.getElementById("code").value == "ⵉⵎⵎⵉⵎ ⵍⴱⴰⵏⴰⵏ/ⵢⴰⵜⴼⵓⵜ ⵍⴱⴰⵏⴰⵏ" || document.getElementById("code").value == "ⵉⵙ ⵜⴼⴼⵓⴷⴻⴷ" || document.getElementById("code").value == "ⵉⵏⵠⴰ ⵢⵉ ⵍⴰç"|| document.getElementById("code").value == "ⵉⵙ ⵠⵓⵔⴽ ⵜⴰⵙⴱⵔⵉⵜ ⵏ ⵡⴰⵎⴰⵏ"|| document.getElementById("code").value == "ⵡⵊⴷ ⵍⴼⴷⵓⵔ"){
+            document.getElementById('first').style.background = 'green';
+           
+           document.getElementById("number-of-coins").innerHTML = parseInt(document.getElementById("number-of-coins").innerHTML) + 10;
+        }
+        else{
+            document.getElementById("number-of-coins").innerHTML = "0";
+            document.getElementById("restart").style.display = "block";
+            document.getElementById('first').style.background = 'red';
+            if(document.getElementById("code").value == "我々の日常生活の日本語の単語" ||  document.getElementById("code").value == "あなたに平和を"  ||  document.getElementById("code").value == "お元気ですか" ||  document.getElementById("code").value == "また来日" ||  document.getElementById("code").value == "プログラミング"){
+                document.getElementById('second').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "Hello , I'm speaking English" || document.getElementById("code").value == "how are you" || document.getElementById("code").value == "are you fine"|| document.getElementById("code").value == "see you next time"|| document.getElementById("code").value == "it's programming"){
+                document.getElementById('third').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "die Gefühle" || document.getElementById("code").value == "Frieden sei mit dir" || document.getElementById("code").value == "Hallo"|| document.getElementById("code").value == "Wir sehen uns an einem anderen Tag"|| document.getElementById("code").value == "wie geht es dir"){
+                document.getElementById('fourth').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "狗 微笑" || document.getElementById("code").value == "使您平静" || document.getElementById("code").value == "你还好吗"|| document.getElementById("code").value == "程式设计"|| document.getElementById("code").value == "再见"){
+                document.getElementById('fivth').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "Собака Улыбаться" || document.getElementById("code").value == "Увидимся в другой день" || document.getElementById("code").value == "мир Вам"|| document.getElementById("code").value == "как дела"|| document.getElementById("code").value == "у тебя есть собака"){
+                document.getElementById('sixth').style.background = 'green';
+            }
+            
+
+        }
+}
+function second(){
+    
+    if(document.getElementById("code").value == "我々の日常生活の日本語の単語" ||  document.getElementById("code").value == "あなたに平和を"  ||  document.getElementById("code").value == "お元気ですか" ||  document.getElementById("code").value == "また来日" ||  document.getElementById("code").value == "プログラミング"){
+            document.getElementById('second').style.background = 'green';
+            document.getElementById("number-of-coins").innerHTML = parseInt(document.getElementById("number-of-coins").innerHTML) + 10;
+        }
+        else{
+            document.getElementById("number-of-coins").innerHTML = "0";
+            document.getElementById("restart").style.display = "block";
+            document.getElementById('second').style.background = 'red';
+            if(document.getElementById("code").value == "ⵉⵎⵎⵉⵎ ⵍⴱⴰⵏⴰⵏ/ⵢⴰⵜⴼⵓⵜ ⵍⴱⴰⵏⴰⵏ" || document.getElementById("code").value == "ⵉⵙ ⵜⴼⴼⵓⴷⴻⴷ" || document.getElementById("code").value == "ⵉⵏⵠⴰ ⵢⵉ ⵍⴰç"|| document.getElementById("code").value == "ⵉⵙ ⵠⵓⵔⴽ ⵜⴰⵙⴱⵔⵉⵜ ⵏ ⵡⴰⵎⴰⵏ"|| document.getElementById("code").value == "ⵡⵊⴷ ⵍⴼⴷⵓⵔ"){
+                document.getElementById('first').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "Hello , I'm speaking English" || document.getElementById("code").value == "how are you" || document.getElementById("code").value == "are you fine"|| document.getElementById("code").value == "see you next time"|| document.getElementById("code").value == "it's programming"){
+                document.getElementById('third').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "die Gefühle" || document.getElementById("code").value == "Frieden sei mit dir" || document.getElementById("code").value == "Hallo"|| document.getElementById("code").value == "Wir sehen uns an einem anderen Tag"|| document.getElementById("code").value == "wie geht es dir"){
+                document.getElementById('fourth').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "狗 微笑" || document.getElementById("code").value == "使您平静" || document.getElementById("code").value == "你还好吗"|| document.getElementById("code").value == "程式设计"|| document.getElementById("code").value == "再见"){
+                document.getElementById('fivth').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "Собака Улыбаться" || document.getElementById("code").value == "Увидимся в другой день" || document.getElementById("code").value == "мир Вам"|| document.getElementById("code").value == "как дела"|| document.getElementById("code").value == "у тебя есть собака"){
+                document.getElementById('sixth').style.background = 'green';
+            }
+            
+
+        }
+}
+function third(){
+    if(document.getElementById("code").value == "Hello , I'm speaking English" || document.getElementById("code").value == "how are you" || document.getElementById("code").value == "are you fine"|| document.getElementById("code").value == "see you next time"|| document.getElementById("code").value == "it's programming"){
+            document.getElementById('third').style.background = 'green';
+            document.getElementById("number-of-coins").innerHTML = parseInt(document.getElementById("number-of-coins").innerHTML) + 10;
+        }
+        else{
+            document.getElementById("number-of-coins").innerHTML = "0";
+            document.getElementById("restart").style.display = "block";
+            document.getElementById('third').style.background = 'red';
+            if(document.getElementById("code").value == "ⵉⵎⵎⵉⵎ ⵍⴱⴰⵏⴰⵏ/ⵢⴰⵜⴼⵓⵜ ⵍⴱⴰⵏⴰⵏ" || document.getElementById("code").value == "ⵉⵙ ⵜⴼⴼⵓⴷⴻⴷ" || document.getElementById("code").value == "ⵉⵏⵠⴰ ⵢⵉ ⵍⴰç"|| document.getElementById("code").value == "ⵉⵙ ⵠⵓⵔⴽ ⵜⴰⵙⴱⵔⵉⵜ ⵏ ⵡⴰⵎⴰⵏ"|| document.getElementById("code").value == "ⵡⵊⴷ ⵍⴼⴷⵓⵔ"){
+                document.getElementById('first').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "我々の日常生活の日本語の単語" ||  document.getElementById("code").value == "あなたに平和を"  ||  document.getElementById("code").value == "お元気ですか" ||  document.getElementById("code").value == "また来日" ||  document.getElementById("code").value == "プログラミング"){
+                document.getElementById('second').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "die Gefühle" || document.getElementById("code").value == "Frieden sei mit dir" || document.getElementById("code").value == "Hallo"|| document.getElementById("code").value == "Wir sehen uns an einem anderen Tag"|| document.getElementById("code").value == "wie geht es dir"){
+                document.getElementById('fourth').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "狗 微笑" || document.getElementById("code").value == "使您平静" || document.getElementById("code").value == "你还好吗"|| document.getElementById("code").value == "程式设计"|| document.getElementById("code").value == "再见"){
+                document.getElementById('fivth').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "Собака Улыбаться" || document.getElementById("code").value == "Увидимся в другой день" || document.getElementById("code").value == "мир Вам"|| document.getElementById("code").value == "как дела"|| document.getElementById("code").value == "у тебя есть собака"){
+                document.getElementById('sixth').style.background = 'green';
+            }
+            
+
+        }
+}
+function fourth(){
+    if(document.getElementById("code").value == "die Gefühle" || document.getElementById("code").value == "Frieden sei mit dir" || document.getElementById("code").value == "Hallo"|| document.getElementById("code").value == "Wir sehen uns an einem anderen Tag"|| document.getElementById("code").value == "wie geht es dir"){
+            document.getElementById('fourth').style.background = 'green';
+            document.getElementById("number-of-coins").innerHTML = parseInt(document.getElementById("number-of-coins").innerHTML) + 10;
+        }
+        else{
+           document.getElementById("number-of-coins").innerHTML = "0";
+            document.getElementById("restart").style.display = "block";
+            document.getElementById('fourth').style.background = 'red';
+            if(document.getElementById("code").value == "ⵉⵎⵎⵉⵎ ⵍⴱⴰⵏⴰⵏ/ⵢⴰⵜⴼⵓⵜ ⵍⴱⴰⵏⴰⵏ" || document.getElementById("code").value == "ⵉⵙ ⵜⴼⴼⵓⴷⴻⴷ" || document.getElementById("code").value == "ⵉⵏⵠⴰ ⵢⵉ ⵍⴰç"|| document.getElementById("code").value == "ⵉⵙ ⵠⵓⵔⴽ ⵜⴰⵙⴱⵔⵉⵜ ⵏ ⵡⴰⵎⴰⵏ"|| document.getElementById("code").value == "ⵡⵊⴷ ⵍⴼⴷⵓⵔ"){
+                document.getElementById('first').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "我々の日常生活の日本語の単語" ||  document.getElementById("code").value == "あなたに平和を"  ||  document.getElementById("code").value == "お元気ですか" ||  document.getElementById("code").value == "また来日" ||  document.getElementById("code").value == "プログラミング"){
+                document.getElementById('second').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "Hello , I'm speaking English" || document.getElementById("code").value == "how are you" || document.getElementById("code").value == "are you fine"|| document.getElementById("code").value == "see you next time"|| document.getElementById("code").value == "it's programming"){
+                document.getElementById('third').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "狗 微笑" || document.getElementById("code").value == "使您平静" || document.getElementById("code").value == "你还好吗"|| document.getElementById("code").value == "程式设计"|| document.getElementById("code").value == "再见"){
+                document.getElementById('fivth').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "Собака Улыбаться" || document.getElementById("code").value == "Увидимся в другой день" || document.getElementById("code").value == "мир Вам"|| document.getElementById("code").value == "как дела"|| document.getElementById("code").value == "у тебя есть собака"){
+                document.getElementById('sixth').style.background = 'green';
+            }
+            
+
+        }
+}
+function fivth(){
+    if(document.getElementById("code").value == "狗 微笑" || document.getElementById("code").value == "使您平静" || document.getElementById("code").value == "你还好吗"|| document.getElementById("code").value == "程式设计"|| document.getElementById("code").value == "再见"){
+            document.getElementById('fivth').style.background = 'green';
+            document.getElementById("number-of-coins").innerHTML = parseInt(document.getElementById("number-of-coins").innerHTML) + 10;
+        }
+        else{
+           document.getElementById("number-of-coins").innerHTML = "0";
+            document.getElementById("restart").style.display = "block";
+            document.getElementById('fivth').style.background = 'red';
+            if(document.getElementById("code").value == "ⵉⵎⵎⵉⵎ ⵍⴱⴰⵏⴰⵏ/ⵢⴰⵜⴼⵓⵜ ⵍⴱⴰⵏⴰⵏ" || document.getElementById("code").value == "ⵉⵙ ⵜⴼⴼⵓⴷⴻⴷ" || document.getElementById("code").value == "ⵉⵏⵠⴰ ⵢⵉ ⵍⴰç"|| document.getElementById("code").value == "ⵉⵙ ⵠⵓⵔⴽ ⵜⴰⵙⴱⵔⵉⵜ ⵏ ⵡⴰⵎⴰⵏ"|| document.getElementById("code").value == "ⵡⵊⴷ ⵍⴼⴷⵓⵔ"){
+                document.getElementById('first').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "我々の日常生活の日本語の単語" ||  document.getElementById("code").value == "あなたに平和を"  ||  document.getElementById("code").value == "お元気ですか" ||  document.getElementById("code").value == "また来日" ||  document.getElementById("code").value == "プログラミング"){
+                document.getElementById('second').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "Hello , I'm speaking English" || document.getElementById("code").value == "how are you" || document.getElementById("code").value == "are you fine"|| document.getElementById("code").value == "see you next time"|| document.getElementById("code").value == "it's programming"){
+                document.getElementById('third').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "die Gefühle" || document.getElementById("code").value == "Frieden sei mit dir" || document.getElementById("code").value == "Hallo"|| document.getElementById("code").value == "Wir sehen uns an einem anderen Tag"|| document.getElementById("code").value == "wie geht es dir"){
+                document.getElementById('fourth').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "Собака Улыбаться" || document.getElementById("code").value == "Увидимся в другой день" || document.getElementById("code").value == "мир Вам"|| document.getElementById("code").value == "как дела"|| document.getElementById("code").value == "у тебя есть собака"){
+                document.getElementById('sixth').style.background = 'green';
+            }
+            
+
+        }
+}
+function sixth(){
+    if(document.getElementById("code").value == "Собака Улыбаться" || document.getElementById("code").value == "Увидимся в другой день" || document.getElementById("code").value == "мир Вам"|| document.getElementById("code").value == "как дела"|| document.getElementById("code").value == "у тебя есть собака"){
+            document.getElementById('sixth').style.background = 'green';
+            document.getElementById("number-of-coins").innerHTML = parseInt(document.getElementById("number-of-coins").innerHTML) + 10;
+        }
+        else{
+            document.getElementById("number-of-coins").innerHTML = "0";
+            document.getElementById("restart").style.display = "block";
+            document.getElementById('sixth').style.background = 'red';
+            if(document.getElementById("code").value == "ⵉⵎⵎⵉⵎ ⵍⴱⴰⵏⴰⵏ/ⵢⴰⵜⴼⵓⵜ ⵍⴱⴰⵏⴰⵏ" || document.getElementById("code").value == "ⵉⵙ ⵜⴼⴼⵓⴷⴻⴷ" || document.getElementById("code").value == "ⵉⵏⵠⴰ ⵢⵉ ⵍⴰç"|| document.getElementById("code").value == "ⵉⵙ ⵠⵓⵔⴽ ⵜⴰⵙⴱⵔⵉⵜ ⵏ ⵡⴰⵎⴰⵏ"|| document.getElementById("code").value == "ⵡⵊⴷ ⵍⴼⴷⵓⵔ"){
+                document.getElementById('first').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "我々の日常生活の日本語の単語" ||  document.getElementById("code").value == "あなたに平和を"  ||  document.getElementById("code").value == "お元気ですか" ||  document.getElementById("code").value == "また来日" ||  document.getElementById("code").value == "プログラミング"){
+                document.getElementById('second').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "Hello , I'm speaking English" || document.getElementById("code").value == "how are you" || document.getElementById("code").value == "are you fine"|| document.getElementById("code").value == "see you next time"|| document.getElementById("code").value == "it's programming"){
+                document.getElementById('third').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "die Gefühle" || document.getElementById("code").value == "Frieden sei mit dir" || document.getElementById("code").value == "Hallo"|| document.getElementById("code").value == "Wir sehen uns an einem anderen Tag"|| document.getElementById("code").value == "wie geht es dir"){
+                document.getElementById('fourth').style.background = 'green';
+            }
+            else if(document.getElementById("code").value == "狗 微笑" || document.getElementById("code").value == "使您平静" || document.getElementById("code").value == "你还好吗"|| document.getElementById("code").value == "程式设计"|| document.getElementById("code").value == "再见"){
+                document.getElementById('fivth').style.background = 'green';
+            }
+            
+
+        }
+}
+function restart(){
+    document.getElementById("number-of-coins").innerHTML = "0";
+    document.getElementById("code").value = "";
+    
+        document.getElementById("first").style.background = "hsl(0, 0%, 20%)";
+        document.getElementById("second").style.background = "hsl(0, 0%, 20%)";
+        document.getElementById("third").style.background = "hsl(0, 0%, 20%)";
+        document.getElementById("fourth").style.background = "hsl(0, 0%, 20%)";
+        document.getElementById("fivth").style.background = "hsl(0, 0%, 20%)";
+        document.getElementById("sixth").style.background = "hsl(0, 0%, 20%)";
+        document.getElementById("restart").style.display = "none";
+}
+
+</script>
+</body>
+</html>
